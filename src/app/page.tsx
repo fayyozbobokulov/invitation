@@ -10,7 +10,7 @@ const WeddingInvitation: React.FC = () => {
   const [lang, setLang] = useState<Language>('uz');
   const [isRSVPOpen, setIsRSVPOpen] = useState(false);
   const t = useTranslations(lang);
-  const googleMapsUrl =`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent('2XP9+WW2, Unnamed Road, Yangirabod, Uzbekistan')}`;
+  const googleMapsUrl =`https://maps.app.goo.gl/xYw5ez592iEe84YG6`;
 
   return (
     <div className="min-h-screen bg-green-50 flex items-center justify-center p-4">
