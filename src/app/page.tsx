@@ -47,8 +47,7 @@ const WeddingInvitation: React.FC = () => {
           <h1 className="text-3xl font-bold text-center text-green-800 mb-4">{t.title}</h1>
           
           <div className="text-center mb-6">
-            <h2 className="text-xl font-semibold text-green-700 mb-2">{t.couple}</h2>
-            <p className="text-2xl font-bold text-green-800">{t.brideName} & {t.groomName}</p>
+            <p className="text-2xl font-bold text-green-800">{t.groomName} & {t.brideName}</p>
           </div>
           
           <div className="flex items-center justify-center mb-4">

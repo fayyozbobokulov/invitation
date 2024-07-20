@@ -61,7 +61,7 @@ const translations: Record<Language, TranslationType> = {
     title: "Приглашение на свадьбу",
     couple: "Невеста и жених",
     brideName: "Мадинабону",
-    groomName: "Файёзджон",
+    groomName: "Файёзжон",
     date: "7 августа 2024 года",
     time: "Среда в 19:00",
     venue: "Осийо Гранд Свадебный Зал",
