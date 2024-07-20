@@ -61,13 +61,13 @@ const RSVPForm: React.FC<RSVPFormProps> = ({ isOpen, onClose, t }) => {
     <Dialog open={isOpen} onOpenChange={onClose}>
       <DialogContent className="max-w-md mx-auto">
         <DialogHeader>
-          <DialogTitle>{t.formTitle}</DialogTitle>
+          <DialogTitle className='text-green-800'>{t.formTitle}</DialogTitle>
         </DialogHeader>
         {!submitted ? (
           <form onSubmit={handleSubmit}>
-            <div className="space-y-4">
+            <div className="space-y-4 ">
               <div>
-                <Label htmlFor="name">{t.nameLabel}</Label>
+                <Label htmlFor="name" className='text-green-800'>{t.nameLabel}</Label>
                 <Input
                   id="name"
                   value={name}
@@ -76,7 +76,7 @@ const RSVPForm: React.FC<RSVPFormProps> = ({ isOpen, onClose, t }) => {
                 />
               </div>
               <div>
-                <Label htmlFor="phone">
+                <Label htmlFor="phone" className='text-green-800'>
                   {t.phoneLabel}
                   <span className="text-xs text-gray-500 ml-1">({t.phoneFormat})</span>
                 </Label>

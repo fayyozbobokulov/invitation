@@ -17,6 +17,7 @@ export interface TranslationType {
   submit: string;
   thankYou: string;
   phoneError: string;
+  mapButton: string;
 }
 export type Language = 'uz' | 'en' | 'ru' | 'uz-cyrillic';
 
@@ -30,6 +31,7 @@ const translations: Record<Language, TranslationType> = {
     time: "Chorshanba kuni soat 19:00 da",
     venue: "Osiyo Grand To'yxonasi",
     address: "Yangirabod shahri, Xatirchi tumani, Navoiy Viloyati",
+    mapButton: "Xaritada ko'rish",
     rsvp: "Tasdiqlash",
     formTitle: "Ishtirokingizni tasdiqlang",
     nameLabel: "Ismingiz",
@@ -48,6 +50,7 @@ const translations: Record<Language, TranslationType> = {
     time: "Wednesday at 7:00 PM",
     venue: "Osiyo Grand Wedding Hall",
     address: "Yangirabod City, Xatirchi District, Navoiy Region",
+    mapButton: "View on Map",
     rsvp: "RSVP",
     formTitle: "Confirm Your Attendance",
     nameLabel: "Your Name",
@@ -65,7 +68,8 @@ const translations: Record<Language, TranslationType> = {
     date: "7 августа 2024 года",
     time: "Среда в 19:00",
     venue: "Осийо Гранд Свадебный Зал",
-    address: "город Янгирабад, Хатирчинский район, Навоийская область",
+    address: "город Янгирабад, Хатырчинский район, Навоийская область",
+    mapButton: "Посмотреть на карте",
     rsvp: "Подтвердить",
     formTitle: "Подтвердите ваше участие",
     nameLabel: "Ваше имя",
@@ -84,6 +88,7 @@ const translations: Record<Language, TranslationType> = {
     time: "Чоршанба куни соат 19:00 да",
     venue: "Осиё Гранд Тўйхонаси",
     address: "Янгирабод шаҳри, Хатирчи тумани, Навоий вилояти",
+    mapButton: "Харитада кўриш",
     rsvp: "Тасдиқлаш",
     formTitle: "Иштирокингизни тасдиқланг",
     nameLabel: "Исмигизни",

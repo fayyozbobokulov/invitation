@@ -10,6 +10,7 @@ const WeddingInvitation: React.FC = () => {
   const [lang, setLang] = useState<Language>('uz');
   const [isRSVPOpen, setIsRSVPOpen] = useState(false);
   const t = useTranslations(lang);
+  const googleMapsUrl =`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent('2XP9+WW2, Unnamed Road, Yangirabod, Uzbekistan')}`;
 
   return (
     <div className="min-h-screen bg-green-50 flex items-center justify-center p-4">
@@ -50,22 +51,27 @@ const WeddingInvitation: React.FC = () => {
             <p className="text-2xl font-bold text-green-800">{t.groomName} & {t.brideName}</p>
           </div>
           
-          <div className="flex items-center justify-center mb-4">
+          <div className="flex items-center justify-left mb-4">
             <CalendarDays className="text-green-600 mr-2" />
-            <div>
+            <div className="text-left">
               <p>{t.date}</p>
               <p>{t.time}</p>
             </div>
           </div>
           
-          <div className="flex items-center justify-center mb-6">
+          <a 
+            href={googleMapsUrl} 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="flex items-center justify-left mb-6 no-underline hover:underline text-inherit"
+          >
             <MapPin className="text-green-600 mr-2" />
-            <div>
+            <div className="text-left">
               <p>{t.venue}</p>
               <p>{t.address}</p>
             </div>
-          </div>
-          
+          </a>
+
           <div className="text-center">
             <Button 
               onClick={() => setIsRSVPOpen(true)}
