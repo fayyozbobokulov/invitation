@@ -24,7 +24,7 @@ const translations: Record<Language, TranslationType> = {
   'uz': {
     title: "Nikoh to'yiga taklifnoma",
     couple: "Kelin va kuyov",
-    brideName: "Madinaxon",
+    brideName: "Madinabonu",
     groomName: "Fayyozjon",
     date: "2024 yil 7 avgust",
     time: "Chorshanba kuni soat 19:00 da",
@@ -42,7 +42,7 @@ const translations: Record<Language, TranslationType> = {
   'en': {
     title: "Wedding Invitation",
     couple: "Bride and Groom",
-    brideName: "Madinakhon",
+    brideName: "Madinabonu",
     groomName: "Fayyozjon",
     date: "August 7, 2024",
     time: "Wednesday at 7:00 PM",
@@ -60,7 +60,7 @@ const translations: Record<Language, TranslationType> = {
   'ru': {
     title: "Приглашение на свадьбу",
     couple: "Невеста и жених",
-    brideName: "Мадинахон",
+    brideName: "Мадинабону",
     groomName: "Файёзджон",
     date: "7 августа 2024 года",
     time: "Среда в 19:00",
@@ -78,7 +78,7 @@ const translations: Record<Language, TranslationType> = {
   'uz-cyrillic': {
     title: "Никоҳ тўйига таклифнома",
     couple: "Келин ва куёв",
-    brideName: "Мадинахон",
+    brideName: "Мадинабону",
     groomName: "Файёзжон",
     date: "2024 йил 7 август",
     time: "Чоршанба куни соат 19:00 да",
