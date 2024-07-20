@@ -18,17 +18,18 @@ export interface TranslationType {
   thankYou: string;
   phoneError: string;
 }
+export type Language = 'uz' | 'en' | 'ru' | 'uz-cyrillic';
 
-const translations: Record<'uz' | 'en' | 'ru' | 'uz-cyrillic', TranslationType> = {
+const translations: Record<Language, TranslationType> = {
   'uz': {
     title: "Nikoh to'yiga taklifnoma",
     couple: "Kelin va kuyov",
     brideName: "Madinaxon",
     groomName: "Fayyozjon",
-    date: "2024 yil 15 oktyabr",
-    time: "Shanba kuni soat 15:00 da",
-    venue: "Go'zal Bog' To'yxonasi",
-    address: "Muhabbat ko'chasi 123-uy, Romantik shahri",
+    date: "2024 yil 7 avgust",
+    time: "Chorshanba kuni soat 19:00 da",
+    venue: "Osiyo Grand To'yxonasi",
+    address: "Yangirabod shahri, Xatirchi tumani, Navoiy Viloyati",
     rsvp: "Tasdiqlash",
     formTitle: "Ishtirokingizni tasdiqlang",
     nameLabel: "Ismingiz",
@@ -43,10 +44,10 @@ const translations: Record<'uz' | 'en' | 'ru' | 'uz-cyrillic', TranslationType> 
     couple: "Bride and Groom",
     brideName: "Madinakhon",
     groomName: "Fayyozjon",
-    date: "October 15, 2024",
-    time: "Saturday at 3:00 PM",
-    venue: "Beautiful Garden Wedding Hall",
-    address: "123 Love Street, Romantic City",
+    date: "August 7, 2024",
+    time: "Wednesday at 7:00 PM",
+    venue: "Osiyo Grand Wedding Hall",
+    address: "Yangirabod City, Xatirchi District, Navoiy Region",
     rsvp: "RSVP",
     formTitle: "Confirm Your Attendance",
     nameLabel: "Your Name",
@@ -61,10 +62,10 @@ const translations: Record<'uz' | 'en' | 'ru' | 'uz-cyrillic', TranslationType> 
     couple: "Невеста и жених",
     brideName: "Мадинахон",
     groomName: "Файёзджон",
-    date: "15 октября 2024 года",
-    time: "Суббота в 15:00",
-    venue: "Красивый Сад Свадебный Зал",
-    address: "Любовная улица, 123, Романтический город",
+    date: "7 августа 2024 года",
+    time: "Среда в 19:00",
+    venue: "Осийо Гранд Свадебный Зал",
+    address: "город Янгирабад, Хатирчинский район, Навоийская область",
     rsvp: "Подтвердить",
     formTitle: "Подтвердите ваше участие",
     nameLabel: "Ваше имя",
@@ -79,10 +80,10 @@ const translations: Record<'uz' | 'en' | 'ru' | 'uz-cyrillic', TranslationType> 
     couple: "Келин ва куёв",
     brideName: "Мадинахон",
     groomName: "Файёзжон",
-    date: "2024 йил 15 октябр",
-    time: "Шанба куни соат 15:00 да",
-    venue: "Гўзал Бог' Тўйхонаси",
-    address: "Мухаббат кўчаси 123-уй, Романтик шаҳри",
+    date: "2024 йил 7 август",
+    time: "Чоршанба куни соат 19:00 да",
+    venue: "Осиё Гранд Тўйхонаси",
+    address: "Янгирабод шаҳри, Хатирчи тумани, Навоий вилояти",
     rsvp: "Тасдиқлаш",
     formTitle: "Иштирокингизни тасдиқланг",
     nameLabel: "Исмигизни",
@@ -94,7 +95,7 @@ const translations: Record<'uz' | 'en' | 'ru' | 'uz-cyrillic', TranslationType> 
   }
 };
 
-export const useTranslations = (lang: 'uz' | 'en'): TranslationType => {
+export const useTranslations = (lang: Language): TranslationType => {
   const [t, setT] = useState<TranslationType>(translations[lang]);
 
   useEffect(() => {

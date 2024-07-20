@@ -3,10 +3,10 @@ import { useState } from 'react';
 import { CalendarDays, MapPin, Heart } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import RSVPForm from '@/components/RSVPForm';
-import { useTranslations } from '@/hooks/useTranslations';
+import { Language, useTranslations } from '@/hooks/useTranslations';
 
 const WeddingInvitation: React.FC = () => {
-  const [lang, setLang] = useState<'uz' | 'en'>('uz');
+  const [lang, setLang] = useState<Language>('uz');
   const [isRSVPOpen, setIsRSVPOpen] = useState(false);
   const t = useTranslations(lang);
 
@@ -22,10 +22,22 @@ const WeddingInvitation: React.FC = () => {
               O'zbekcha
             </Button>
             <Button 
+              variant={lang === 'uz-cyrillic' ? 'secondary' : 'ghost'} 
+              onClick={() => setLang('uz-cyrillic')}
+            >
+              Ўзбекча
+            </Button>
+            <Button 
               variant={lang === 'en' ? 'secondary' : 'ghost'} 
               onClick={() => setLang('en')}
             >
               English
+            </Button>
+            <Button 
+              variant={lang === 'ru' ? 'secondary' : 'ghost'} 
+              onClick={() => setLang('ru')}
+            >
+              Русский
             </Button>
           </div>
         </div>
