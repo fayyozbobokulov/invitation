@@ -46,7 +46,7 @@ const WeddingInvitation: React.FC = () => {
         </div>
 
         <div className="p-6 relative">
-          <div className='relative text-center pt-9'>
+          {/* <div className='relative text-center pt-9'>
             <Image 
               src="/floral-wreath.png" 
               alt="Floral Wreath" 
@@ -57,7 +57,7 @@ const WeddingInvitation: React.FC = () => {
             <div className="absolute inset-0 flex items-center justify-center">
               <h1 className="text-2xl font-bold text-green-800">F | M</h1>
             </div>
-          </div>
+          </div> */}
 
           <h1 className="text-3xl font-bold text-center text-green-800 mb-4">{t.title}</h1>
           
