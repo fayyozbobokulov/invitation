@@ -1,7 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
 'use client'
 import { useState } from 'react';
-import { CalendarDays, MapPin, Heart } from 'lucide-react';
+import { CalendarDays, MapPin, Heart, ExternalLink } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import RSVPForm from '@/components/RSVPForm';
 import { Language, useTranslations } from '@/hooks/useTranslations';
@@ -77,13 +77,14 @@ const WeddingInvitation: React.FC = () => {
             href={googleMapsUrl} 
             target="_blank" 
             rel="noopener noreferrer"
-            className="flex items-center justify-left mb-6 no-underline hover:underline text-inherit"
+            className="flex items-center justify-left mb-6 no-underline hover:underline text-inherit bg-green-100 p-3 rounded-lg transition-all duration-300 hover:bg-green-200"
           >
             <MapPin className="text-green-600 mr-2" />
-            <div className="text-left">
-              <p>{t.venue}</p>
+            <div className="text-left flex-grow">
+              <p className="font-semibold">{t.venue}</p>
               <p>{t.address}</p>
             </div>
+            <ExternalLink className="text-green-600 ml-2" size={20} />
           </a>
 
           <div className="text-center">
